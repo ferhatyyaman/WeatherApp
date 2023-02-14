@@ -42,27 +42,20 @@ function App() {
   }
 
   return (
-    <div> 
+    <div className="container"> 
       <div className="search">
         <Row>
         <InputGroup>
           <Input type="text" placeholder='search a city...' onChange={handleChange}/>
-          <Button onClick={()=>getdata(cityInput)}>Search</Button>
+          <Button color="dark" onClick={()=>getdata(cityInput)}>Search</Button>
         </InputGroup>
         </Row> 
       </div>
-      <div>
+      <div className="main">
       {weatherdata.map(item=>(
             <Weathers key={item.date} weather={weather} date={item.date} mintemp={item.day.mintemp_c} maxtemp={item.day.maxtemp_c} condition={item.day.condition.text} icon={item.day.condition.icon}/>
       ))}
-      </div>
-
-
-
-
-
-           
-           
+      </div> 
           
     </div>
   );

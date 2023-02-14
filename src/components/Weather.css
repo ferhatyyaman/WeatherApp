@@ -1,21 +1,25 @@
+
 .result{
     display: flex;
-    min-height: 10vh;
-    width: 80%;
+    min-height: 50vh;
+    width: 100%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+}
+.result:hover{
+    border: 5px solid black;
 }
 ul{
-    width: 50%;
     display: flex;
+    flex-direction: column;
     list-style: none;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     font-size: 1.5rem;
 }
- h2{
-    margin-left: 20px;
- }
-
+li{
+    margin-top: 10px;
+}

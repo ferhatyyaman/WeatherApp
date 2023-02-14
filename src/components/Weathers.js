@@ -7,12 +7,11 @@ export const Weathers = ({weather, date ,mintemp, maxtemp, condition, icon}) => 
   }
   
   return (
-    <div> 
-
+    <div className="container"> 
       <div className='result'>
-            <h2>{date}</h2>
             <ul>
-              <li><img src={icon} alt="" /></li>
+              <h2>{date}</h2>
+              <li><img src={icon} alt=""/></li>
               <li>{condition}</li>
               <li>{mintemp} C /{maxtemp} C</li>
             </ul>
